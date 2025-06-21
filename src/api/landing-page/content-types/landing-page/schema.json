@@ -1,0 +1,49 @@
+{
+  "kind": "singleType",
+  "collectionName": "landing_pages",
+  "info": {
+    "singularName": "landing-page",
+    "pluralName": "landing-pages",
+    "displayName": "Landing Page",
+    "description": "Customizable landing page for EngineeringCoders"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "heroTitle": { "type": "string", "required": true },
+    "heroSubtitle": { "type": "richtext", "required": true },
+    "heroImage": { "type": "media", "multiple": false, "required": false },
+    "heroCTA": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::cta-button.cta-button"
+    },
+    "aboutTitle": { "type": "string", "required": true },
+    "aboutContent": { "type": "richtext", "required": true },
+    "aboutImage": { "type": "media", "multiple": false, "required": false },
+    "benefits": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::benefit.benefit"
+    },
+    "initiatives": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::initiative.initiative"
+    },
+    "joinTitle": { "type": "string", "required": true },
+    "joinContent": { "type": "richtext", "required": true },
+    "joinCTA": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::cta-button.cta-button"
+    },
+    "footerText": { "type": "string", "required": true },
+    "footerLinks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::footer-link.footer-link"
+    }
+  }
+}

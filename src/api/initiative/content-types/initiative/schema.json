@@ -1,0 +1,14 @@
+{
+  "kind": "collectionType",
+  "collectionName": "initiatives",
+  "info": {
+    "singularName": "initiative",
+    "pluralName": "initiatives",
+    "displayName": "Initiative"
+  },
+  "attributes": {
+    "title": { "type": "string", "required": true },
+    "description": { "type": "string", "required": true },
+    "image": { "type": "media", "multiple": false, "required": false }
+  }
+}

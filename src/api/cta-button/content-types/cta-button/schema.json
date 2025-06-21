@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cta_buttons",
+  "info": {
+    "singularName": "cta-button",
+    "pluralName": "cta-buttons",
+    "displayName": "CTA Button"
+  },
+  "attributes": {
+    "label": { "type": "string", "required": true },
+    "url": { "type": "string", "required": true },
+    "style": {
+      "type": "enumeration",
+      "enum": ["primary", "secondary", "link"],
+      "default": "primary"
+    }
+  }
+}
